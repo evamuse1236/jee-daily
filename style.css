@@ -50,7 +50,7 @@ header.site p { margin-block: 0.75rem 0; color: var(--muted); }
 .day { padding-block-start: var(--space); }
 .day + .day { margin-block-start: var(--space); border-block-start: 1px solid var(--rule); }
 .day h2 {
-  margin: 0 0 1.5rem;
+  margin: 0 0 0.75rem;
   font-size: clamp(1.4rem, 1.2rem + 1vw, 1.75rem);
   font-weight: 700;
   line-height: 1.2;
@@ -58,6 +58,7 @@ header.site p { margin-block: 0.75rem 0; color: var(--muted); }
 .day h2 .weekday { display: block; font-size: 0.6em; font-weight: 400; color: var(--muted); }
 
 .question { padding-block: 1.75rem; }
+.day h2 + .question { padding-block-start: 0.5rem; }
 .question + .question { border-block-start: 1px dashed var(--rule); }
 
 .q-head { margin-block-end: 1rem; }
@@ -86,12 +87,12 @@ figure img {
 .katex { font-size: 1.05em; }
 .math .katex { font-size: min(1.05em, 4.3vw); }
 .math {
-  --fade: color-mix(in oklch, var(--ink) 22%, transparent);
+  --fade: color-mix(in oklch, var(--ink) 40%, transparent);
   background:
     linear-gradient(to right, var(--paper) 40%, transparent) left / 1.5rem 100% no-repeat local,
     linear-gradient(to left, var(--paper) 40%, transparent) right / 1.5rem 100% no-repeat local,
-    radial-gradient(farthest-side at 0 50%, var(--fade), transparent) left / 0.5rem 100% no-repeat scroll,
-    radial-gradient(farthest-side at 100% 50%, var(--fade), transparent) right / 0.5rem 100% no-repeat scroll;
+    radial-gradient(farthest-side at 0 50%, var(--fade), transparent) left / 0.75rem 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, var(--fade), transparent) right / 0.75rem 100% no-repeat scroll;
 }
 ol.steps .math { margin-inline-start: -1.85rem; padding-inline-start: 0.25rem; }
 
@@ -124,7 +125,7 @@ details.solution summary {
 details.solution summary::-webkit-details-marker { display: none; }
 details.solution summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 details.solution summary:active { background: var(--tint); }
-details.solution[open] summary { border-style: dashed; }
+details.solution[open] summary { background: var(--tint); }
 
 .when-open { display: none; }
 details[open] .when-open { display: inline; }
@@ -143,9 +144,9 @@ ol.steps li::marker { color: var(--accent); font-weight: 600; }
 ol.steps li > p { margin-block: 0 0.5rem; }
 
 .answer {
-  margin-block: 1.25rem 0;
-  padding-block-start: 0.75rem;
-  border-block-start: 1px solid var(--rule);
+  margin-block: 0 1rem;
+  padding-block-end: 0.75rem;
+  border-block-end: 1px solid var(--rule);
   color: var(--answer);
   font-weight: 600;
 }
@@ -169,4 +170,12 @@ footer.site p { margin: 0; }
     transition: block-size 0.3s var(--ease), content-visibility 0.3s var(--ease) allow-discrete;
   }
   details.solution summary { transition: background-color 0.15s var(--ease); }
+}
+
+p .katex, li .katex { white-space: nowrap; }
+.steps .katex .mfrac, .q-body .katex .mfrac { font-size: 1.15em; }
+.solution-body button.hide {
+  display: block; inline-size: 100%; min-block-size: 48px; margin-block: 1rem 0;
+  font: inherit; font-weight: 600; color: var(--accent);
+  background: transparent; border: 1px solid var(--rule); border-radius: 12px; cursor: pointer;
 }

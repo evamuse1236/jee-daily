@@ -173,9 +173,8 @@ footer.site p { margin: 0; }
 }
 
 p .katex, li .katex { white-space: nowrap; }
-.steps .katex .mfrac, .q-body .katex .mfrac { font-size: 1.15em; }
 .solution-body button.hide {
   display: block; inline-size: 100%; min-block-size: 48px; margin-block: 1rem 0;
   font: inherit; font-weight: 600; color: var(--accent);
-  background: transparent; border: 1px solid var(--rule); border-radius: 12px; cursor: pointer;
+  background: transparent; border: 1px solid var(--accent); border-radius: 12px; cursor: pointer;
 }

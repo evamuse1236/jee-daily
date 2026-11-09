@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Two JEE questions a day</title>
+<meta name="description" content="Two real past JEE questions each day, with a worked solution for each.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script defer src="math.js"></script>
+</head>
+<body>
+<header class="site">
+<h1>Two JEE questions a day</h1>
+<p>Real questions from past JEE papers. Ask first, then open the solution to check the answer.</p>
+</header>
+<main>
+<section class="day" id="d-2026-11-09" data-day="2026-11-09">
+<h2><span class="weekday">Monday</span> <span class="date">9 November 2026</span></h2>
+<article class="question" id="7mdgf6nd0epy">
+<header class="q-head">
+<p class="q-num">Question 1</p>
+<p class="q-meta"><span>Physics, Current electricity</span>
+<cite>JEE Main 2025 (April session)</cite></p>
+</header>
+<div class="q-body"><p>A motor operating on $100\ \text{V}$ draws a current of $1\ \text{A}$. If the efficiency of the motor is $91.6\%$, then the loss of power in units of $\mathrm{cal/s}$ is</p></div>
+
+<ol class="options"><li><span class="letter">A</span><span class="opt">$4$</span></li><li><span class="letter">B</span><span class="opt">$8.4$</span></li><li><span class="letter">C</span><span class="opt">$2$</span></li><li><span class="letter">D</span><span class="opt">$6.2$</span></li></ol>
+<details class="solution">
+<summary><span class="when-closed">Show solution</span><span class="when-open">Hide solution</span></summary>
+<div class="solution-body">
+<p>The power the motor does not turn into useful work is the <strong>power lost</strong>. We find it in watts, then change it to calories per second.</p>
+<ol class="steps" start="1"><li><p>The <strong>input power</strong> is voltage times current.</p><div class="math">$$P_{in} = VI = 100 \times 1 = 100\ \text{W}$$</div></li><li><p>An efficiency of $91.6\%$ means $91.6\%$ of the input becomes useful output. The other $8.4\%$ is <strong>lost</strong>.</p><div class="math">$$P_{loss} = (100\% - 91.6\%) \times 100\ \text{W} = 0.084 \times 100 = 8.4\ \text{W}$$</div></li><li><p>A watt is one joule per second, so the motor loses $8.4\ \text{J}$ every second. Use $1\ \text{cal} = 4.2\ \text{J}$ to <strong>convert to calories</strong>.</p><div class="math">$$P_{loss} = \frac{8.4}{4.2}\ \mathrm{cal/s} = 2\ \mathrm{cal/s}$$</div></li><li><p>Option (B), $8.4$, is the loss in watts, not in cal/s. Option (C) gives the loss in cal/s.</p></li></ol>
+<p class="answer">Answer: <strong>(C)</strong> $2$</p>
+</div>
+</details>
+</article>
+<article class="question" id="7jt82ecrwv8m">
+<header class="q-head">
+<p class="q-num">Question 2</p>
+<p class="q-meta"><span>Maths, Definite integration</span>
+<cite>JEE Main 2024 (April session)</cite></p>
+</header>
+<div class="q-body"><p>The integral</p>
+<div class="math">$$\int_0^{\pi/4} \frac{136 \sin x}{3 \sin x + 5 \cos x}\, dx$$</div>
+<p>is equal to:</p></div>
+
+<ol class="options"><li><span class="letter">A</span><span class="opt">$3\pi - 50 \log_e 2 + 20 \log_e 5$</span></li><li><span class="letter">B</span><span class="opt">$3\pi - 25 \log_e 2 + 10 \log_e 5$</span></li><li><span class="letter">C</span><span class="opt">$3\pi - 10 \log_e (2\sqrt{2}) + 10 \log_e 5$</span></li><li><span class="letter">D</span><span class="opt">$3\pi - 30 \log_e 2 + 20 \log_e 5$</span></li></ol>
+<details class="solution">
+<summary><span class="when-closed">Show solution</span><span class="when-open">Hide solution</span></summary>
+<div class="solution-body">
+<p>Write the top as a multiple of the bottom plus a multiple of the bottom's <strong>derivative</strong>. Each part then integrates easily.</p>
+<ol class="steps" start="1"><li><p>The denominator is $D = 3\sin x + 5\cos x$. Its derivative is $D' = 3\cos x - 5\sin x$. Write the numerator using $D$ and $D'$:</p><div class="math">$$\sin x = A(3\sin x + 5\cos x) + B(3\cos x - 5\sin x)$$</div></li><li><p><strong>Compare coefficients.</strong> For $\sin x$: $3A - 5B = 1$. For $\cos x$: $5A + 3B = 0$. Solving gives $A = \frac{3}{34}$ and $B = -\frac{5}{34}$.</p></li><li><p><strong>Split the integrand.</strong> Since $136 \cdot \frac{3}{34} = 12$ and $136 \cdot \frac{5}{34} = 20$:</p><div class="math">$$\frac{136\sin x}{D} = 12 - 20\,\frac{D'}{D}$$</div></li><li><p><strong>Integrate.</strong> We have $\int \frac{D'}{D}\,dx = \log_e D$, so the antiderivative is:</p><div class="math">$$12x - 20\log_e(3\sin x + 5\cos x)$$</div></li><li><p><strong>Put in the limits.</strong> At $x = \frac{\pi}{4}$: $D = \frac{3}{\sqrt2} + \frac{5}{\sqrt2} = \frac{8}{\sqrt2} = 4\sqrt2$. At $x = 0$: $D = 5$. So the integral equals:</p><div class="math">$$12\cdot\frac{\pi}{4} - 20\left[\log_e(4\sqrt2) - \log_e 5\right]$$</div></li><li><p><strong>Simplify.</strong> We have $4\sqrt2 = 2^{5/2}$, so $\log_e(4\sqrt2) = \frac{5}{2}\log_e 2$. The result is:</p><div class="math">$$3\pi - 50\log_e 2 + 20\log_e 5$$</div></li></ol>
+<p class="answer">Answer: <strong>(A)</strong> $3\pi - 50 \log_e 2 + 20 \log_e 5$</p>
+</div>
+</details>
+</article>
+</section>
+
+</main>
+<footer class="site">
+<p>Questions are from past JEE Main papers. The solutions are written for this page.</p>
+</footer>
+</body>
+</html>

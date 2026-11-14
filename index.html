@@ -21,6 +21,48 @@
 <p>Real questions from past JEE papers. Ask first, then open the solution to check the answer.</p>
 </header>
 <main>
+<section class="day" id="d-2026-11-14" data-day="2026-11-14">
+<h2><span class="weekday">Saturday</span> <span class="date">14 November 2026</span></h2>
+<article class="question" id="k6hw38myuwvn">
+<header class="q-head">
+<p class="q-num">Question 1</p>
+<p class="q-meta"><span>Maths, Parabola</span>
+<cite>JEE Main 2025 (January session)</cite></p>
+</header>
+<div class="q-body"><p>Let the shortest distance from $(a, 0)$, $a&gt;0$, to the parabola $y^2=4x$ be $4$. Then the equation of the circle passing through the point $(a, 0)$ and the focus of the parabola, and having its centre on the axis of the parabola, is:</p></div>
+
+<ol class="options"><li><span class="letter">A</span><span class="opt">$x^2+y^2-10x+9=0$</span></li><li><span class="letter">B</span><span class="opt">$x^2+y^2-6x+5=0$</span></li><li><span class="letter">C</span><span class="opt">$x^2+y^2-4x+3=0$</span></li><li><span class="letter">D</span><span class="opt">$x^2+y^2-8x+7=0$</span></li></ol>
+<details class="solution">
+<summary><span class="when-closed">Show solution</span><span class="when-open">Hide solution</span></summary>
+<div class="solution-body">
+<p class="answer">Answer: <strong>(B)</strong> $x^2+y^2-6x+5=0$</p>
+<p>Find $a$ by <strong>minimising the distance</strong> from $(a,0)$ to a general point on the parabola. Then find the circle through two points on the $x$-axis.</p>
+<ol class="steps" start="1"><li><p>Any point on $y^2=4x$ can be written as $(t^2, 2t)$. Its squared distance from $(a,0)$ is:</p><div class="math">$$D=(t^2-a)^2+4t^2$$</div></li><li><p>Put $u=t^2$, where $u\ge 0$. Then:</p><div class="math">$$D=(u-a)^2+4u$$</div></li><li><p><strong>Minimise</strong> by setting the derivative to zero:</p><div class="math">$$2(u-a)+4=0$$</div><div class="math">$$u=a-2$$</div></li><li><p>If $a&gt;2$, this value of $u$ is allowed. Substitute it back:</p><div class="math">$$\begin{aligned} D_{\min} &amp;= (-2)^2+4(a-2) \\[6pt] &amp;= 4a-4 \end{aligned}$$</div></li><li><p>The shortest distance is $4$, so $D_{\min}=16$:</p><div class="math">$$4a-4=16 \;\Rightarrow\; a=5$$</div><p>This satisfies $a&gt;2$. If $a\le 2$, the minimum would be at $u=0$, giving distance $a=4$. That contradicts $a\le 2$, so $a=5$ is the only possibility.</p></li><li><p>The <strong>focus</strong> of $y^2=4x$ is $(1,0)$, and its <strong>axis</strong> is the $x$-axis. Let the centre be $(h,0)$. It is the same distance from $(1,0)$ and $(5,0)$, so:</p><div class="math">$$h=\dfrac{1+5}{2}=3$$</div><p>The radius is $5-3=2$.</p></li><li><p>The equation of the circle is:</p><div class="math">$$\begin{aligned} (x-3)^2+y^2 &amp;= 4 \\[6pt] x^2+y^2-6x+5 &amp;= 0 \end{aligned}$$</div><p>This matches option (B).</p></li></ol>
+<button type="button" class="hide" onclick="const d=this.closest('details');d.open=false;d.scrollIntoView({block:'start'})">Hide solution</button>
+</div>
+</details>
+</article>
+<article class="question" id="orqh39ff3gdb">
+<header class="q-head">
+<p class="q-num">Question 2</p>
+<p class="q-meta"><span>Maths, Circle</span>
+<cite>JEE Main 2024 (April session)</cite></p>
+</header>
+<div class="q-body"><p>Let the circles $C_1:(x-\alpha)^2+(y-\beta)^2=r_1^2$ and $C_2:(x-8)^2+\left(y-\dfrac{15}{2}\right)^2=r_2^2$ touch each other externally at the point $(6,6)$. If the point $(6,6)$ divides the line segment joining the centres of $C_1$ and $C_2$ internally in the ratio $2:1$, find the value of $(\alpha+\beta)+4\left(r_1^2+r_2^2\right)$.</p></div>
+
+<ol class="options"><li><span class="letter">A</span><span class="opt">125</span></li><li><span class="letter">B</span><span class="opt">130</span></li><li><span class="letter">C</span><span class="opt">110</span></li><li><span class="letter">D</span><span class="opt">145</span></li></ol>
+<details class="solution">
+<summary><span class="when-closed">Show solution</span><span class="when-open">Hide solution</span></summary>
+<div class="solution-body">
+<p class="answer">Answer: <strong>(B)</strong> 130</p>
+<p>Use the <strong>section formula</strong> to find the centre of $C_1$. The radius of each circle is then its centre's <strong>distance</strong> to the point where the circles touch, $(6,6)$.</p>
+<ol class="steps" start="1"><li><p>The centres are $(\alpha,\beta)$ and $\left(8,\dfrac{15}{2}\right)$. The point $(6,6)$ divides the segment joining them in the ratio $2:1$, so:</p><div class="math">$$x=\dfrac{1\cdot\alpha+2\cdot 8}{3}=6$$</div><div class="math">$$y=\dfrac{1\cdot\beta+2\cdot\frac{15}{2}}{3}=6$$</div></li><li><p>Solve these two equations for $\alpha$ and $\beta$:</p><div class="math">$$\begin{aligned} \alpha+16 &amp;= 18 \\[6pt] \alpha &amp;= 2 \end{aligned}$$</div><div class="math">$$\begin{aligned} \beta+15 &amp;= 18 \\[6pt] \beta &amp;= 3 \end{aligned}$$</div><p>So $\alpha+\beta=5$.</p></li><li><p>The circles touch at $(6,6)$, so $r_1$ is the <strong>distance</strong> from $(2,3)$ to $(6,6)$:</p><div class="math">$$\begin{aligned} r_1^2 &amp;= (6-2)^2+(6-3)^2 \\[6pt] &amp;= 16+9 \\[6pt] &amp;= 25 \end{aligned}$$</div></li><li><p>In the same way, $r_2$ is the distance from $\left(8,\dfrac{15}{2}\right)$ to $(6,6)$:</p><div class="math">$$\begin{aligned} r_2^2 &amp;= (8-6)^2+\left(\dfrac{3}{2}\right)^2 \\[6pt] &amp;= 4+\dfrac{9}{4} \\[6pt] &amp;= \dfrac{25}{4} \end{aligned}$$</div></li><li><p>Put these values into the expression:</p><div class="math">$$\begin{aligned} 4(r_1^2+r_2^2) &amp;= 4\left(25+\dfrac{25}{4}\right) \\[6pt] &amp;= 100+25 \\[6pt] &amp;= 125 \end{aligned}$$</div><div class="math">$$\begin{aligned} (\alpha+\beta)+125 &amp;= 5+125 \\[6pt] &amp;= 130 \end{aligned}$$</div></li></ol>
+<button type="button" class="hide" onclick="const d=this.closest('details');d.open=false;d.scrollIntoView({block:'start'})">Hide solution</button>
+</div>
+</details>
+</article>
+</section>
+
 <section class="day" id="d-2026-11-13" data-day="2026-11-13">
 <h2><span class="weekday">Friday</span> <span class="date">13 November 2026</span></h2>
 <article class="question" id="3tj4vj12v9hq">
